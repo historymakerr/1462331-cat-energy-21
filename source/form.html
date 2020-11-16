@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <a class="logo" href="index.html">
+        <picture class="logo__picture">
+          <source media="(min-width: 1440px)" srcset="">
+          <source media="(min-width: 768px)" srcset="">
+          <img class="logo__img" src="" alt="Логотип Cat Energy">
+        </picture>
+      </a>
+      <nav class="header__menu">
+        <button class="header__menu-open visually-hidden">
+          Открыть меню
+        </button>
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="index.html">главная</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="catalog.html">каталог продукции</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link header__menu-link--active" href="">подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="program">
+    <div class="container">
+      <form class="program__form" action="https://echo.htmlacademy.ru" method="POST">
+        <h2 class="program__title title title--s">
+          Подбор программы
+        </h2>
+        <p class="program__text">
+          Заполните анкету, и мы подберем программу питания для вашего кота
+        </p>
+        <div class="program__info">
+          <label class="program__input-label" for="name">
+            ИМЯ:*
+            <input type="text" class="program__input" id="name" placeholder="Барсик">
+          </label>
+          <label class="program__input-label" for="weight">
+            Вес (кг):*
+            <input type="number" class="program__input" id="weight" placeholder="7">
+          </label>
+          <label class="program__input-label" for="age">
+            Возраст (лет):
+            <input type="number" class="program__input" id="age" placeholder="7" min="0" max="30" step="1">
+          </label>
+        </div>
+        <div class="program__goal">
+          <label class="program__input-label" for="lose">
+            <input class="program__input" type="radio" id="lose" name="goal" checked>
+            похудение
+          </label>
+          <label class="program__input-label" for="gain">
+            <input class="program__input" type="radio" id="gain" name="goal">
+            Набор массы
+          </label>
+          <label class="program__input-label" for="unknown">
+            <input class="program__input" type="radio" id="unknown" name="goal">
+            Не знаю (Нужен ваш совет)
+          </label>
+        </div>
+        <div class="program__contacts">
+          <h3 class="form__title">
+            Контактные данные (владельца кота)
+          </h3>
+          <label class="program__input-label" for="email">
+            E-mail:*
+            <input class="program__input" type="email" id="email" placeholder="kuklachev@gmail.com">
+          </label>
+          <label class="program__input-label" for="phone">
+            Телефон:*
+            <input class="program__input" type="tel" id="phone" placeholder="8 (960) 900-60-90">
+          </label>
+        </div>
+        <div class="program__more">
+          <h3 class="form__title">
+            Комментарий
+          </h3>
+          <textarea class="program__textarea" name="habits" id="habits" placeholder="Расскажите обо всех повадках кота"
+            cols="30" rows="10"></textarea>
+        </div>
+        <div class="program__additional">
+          <h3 class="form__title">
+            Дополнительно
+          </h3>
+          <label class="program__checkbox-label" for="sugar-substitute">
+            <input class="program__checkbox" type="checkbox" name="additionals" id="sugar-substitute" checked>
+            сахарозаменитель
+          </label>
+          <label class="program__checkbox-label" for="water">
+            <input class="program__checkbox" type="checkbox" name="additionals" id="water">
+            питьевая вода
+          </label>
+          <label class="program__checkbox-label" for="milk">
+            <input class="program__checkbox" type="checkbox" name="additionals" id="milk">
+            молоко
+          </label>
+          <label class="program__checkbox-label" for="vitamins">
+            <input class="program__checkbox" type="checkbox" name="additionals" id="vitamins">
+            витамины
+          </label>
+        </div>
+        <button class="button" type="submit">отправить заявку</button>
+        <p class="program__form-note">
+          * — Обязательные поля
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <section class="map">
+    <div class="map-invitation">
+      <h3 class="map-invitation__title">
+        приглашаем к сотрудничеству дилеров!
+      </h3>
+      <p class="map-invitation__address">
+        ул. Большая
+        Конюшенная, д. 19/8
+        <span>Санкт-Петербург</span>
+      </p>
+    </div>
+    <iframe class="map-frame" src=""></iframe>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <a class="logo" href="index.html">
+        <img class="logo__name" src="" alt="">
+      </a>
+      <ul class="socials">
+        <li class="socials__item socials__item--vk">
+          <a class="socials__link socials__link--vk" href="#" aria-label="Vkontakte"></a>
+        </li>
+        <li class="socials__item socials__item--inst">
+          <a class="socials__link socials__link--inst" href="#" aria-label="Instagram"></a>
+        </li>
+        <li class="socials__item socials__item--fb">
+          <a class="socials__link socials__link--fb" href="#" aria-label="Facebook"></a>
+        </li>
+      </ul>
+      <div class="copyright">
+        <p class="copyright__text">
+          HTML Academy
+        </p>
+        <img class="copyright__img" src="https://htmlacademy.ru/intensive/adaptive" alt="HTML Academy logo">
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
