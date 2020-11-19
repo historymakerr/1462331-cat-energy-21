@@ -7,15 +7,16 @@
   text-align: center;
   background-repeat: no-repeat;
   background-position: center 170px;
-  background-image: url('../img/preview-bg.png');
+  background-image: url("../img/preview-bg.png");
 }
 
 .preview__title {
   margin-top: 0;
   color: inherit;
 }
+
 .preview__text {
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
@@ -24,7 +25,7 @@
 }
 
 .preview__cat-bg {
-  background-color: rgba($basic-green, .85);
+  background-color: rgba($basic-green, 0.85);
   min-height: 302px;
   position: absolute;
   top: 0;
@@ -36,8 +37,8 @@
   background-position: center center;
   background-size: cover;
 }
+
 .preview__cat-bg-screen {
-  background-color: rgba($basic-green, .85);
+  background-color: rgba($basic-green, 0.85);
   min-height: 302px;
 }
-

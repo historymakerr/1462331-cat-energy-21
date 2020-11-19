@@ -21,5 +21,3 @@ afterButton.addEventListener('click', () => {
   progressBar.classList.add('example__demo-runner-progress--after');
   catImage.src = 'img/example-cat-after.png';
 });
-
-
