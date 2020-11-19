@@ -72,19 +72,20 @@ a {
 .form__title {
   font-size: 24px;
   line-height: 26px;
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
   color: #000000;
   display: flex;
   padding-left: 19px;
 }
+
 .form__title-text {
   margin-right: 22px;
 }
+
 .form__title-bar {
   margin-top: 17px;
   height: 2px;
   flex-grow: 1;
   background-color: $basic-green;
 }
-
