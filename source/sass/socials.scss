@@ -4,15 +4,18 @@
   display: flex;
   list-style: none;
   margin: 0;
-  align-items: center
+  align-items: center;
 }
+
 .socials__item {
   &--vk {
     margin-right: 36px;
   }
+
   &--inst {
     margin-right: 33px;
   }
+
   &--fb:hover path {
     stroke: $basic-green;
   }
@@ -25,4 +28,3 @@
     fill: $basic-green;
   }
 }
-
