@@ -1,0 +1,12 @@
+.logo {
+  padding-top: 5px;
+  display: block;
+  text-align: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}

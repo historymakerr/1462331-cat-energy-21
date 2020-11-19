@@ -1,0 +1,27 @@
+.map__wrapper {
+  padding: 0 19px;
+}
+.map-invitation {
+  background-color: #ffffff;
+  padding: 28px 0 23px;
+  display: flex;
+  justify-content: space-between;
+}
+.map-invitation__title {
+  font-family: Oswald;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  margin-right: 8px;
+}
+.map-invitation__address {
+  line-height: 20px;
+}
+
+.map-frame {
+  border: 0;
+  height: 362px;
+  width: 100%;
+}
