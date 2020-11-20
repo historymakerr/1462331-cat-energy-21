@@ -1,33 +1,22 @@
 // Начните писать стили здесь
 // INDEX
 @import "global.scss";
+@import "blocks/button.scss";
 @import "fonts.scss";
 
-/* Header */
-@import "header.scss";
-@import "logo.scss";
-@import "site-list.scss";
 
 
-/* Preview */
-@import "preview.scss";
-
-/* Programs */
-@import "programs.scss";
-
-/* Info */
-@import "info.scss";
-
-/* Example */
-@import "example.scss";
-
-/* Map */
-@import "map.scss";
-
-/* Footer */
-@import "footer.scss";
-@import "socials.scss";
-@import "copyright.scss";
+@import "blocks/header.scss";
+@import "blocks/logo.scss";
+@import "blocks/site-list.scss";
+@import "blocks/preview.scss";
+@import "blocks/programs.scss";
+@import "blocks/info.scss";
+@import "blocks/example.scss";
+@import "blocks/map.scss";
+@import "blocks/footer.scss";
+@import "blocks/socials.scss";
+@import "blocks/copyright.scss";
 
 
 //FORM
