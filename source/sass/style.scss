@@ -1,12 +1,11 @@
 // Начните писать стили здесь
 // INDEX
 @import "global.scss";
-@import "blocks/button.scss";
 @import "fonts.scss";
 
 
-
-
+//Blocks
+@import "blocks/button.scss";
 @import "blocks/header.scss";
 @import "blocks/logo.scss";
 @import "blocks/site-list.scss";
