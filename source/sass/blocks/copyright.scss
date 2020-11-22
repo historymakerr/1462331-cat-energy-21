@@ -1,0 +1,22 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+
+  &:hover path {
+    fill: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__link {
+  line-height: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

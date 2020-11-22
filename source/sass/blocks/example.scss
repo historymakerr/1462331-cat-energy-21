@@ -1,0 +1,119 @@
+.example {
+  background-color: $example-bg;
+  padding-top: 27px;
+}
+
+.example__title {
+  margin-top: 0;
+}
+
+.example__text {
+  margin-bottom: 25px;
+}
+
+.example__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.example__item {
+  text-align: center;
+  font-size: 12px;
+  line-height: 12px;
+  position: relative;
+
+  &--framed {
+    min-width: 124px;
+  }
+}
+
+.example__item-number {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  display: block;
+  padding: 14px 20px 18px;
+  border: 1px solid $special-grey;
+  border-radius: 5px;
+  margin-bottom: -8px;
+}
+
+.example__item-text {
+  display: inline-block;
+  padding: 0 17px;
+  background-color: $example-bg;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.example__item-price {
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 25px 0 42px;
+}
+
+.example__demo-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 35px 31px;
+}
+
+.example__demo-img {
+  max-width: 100%;
+}
+
+.example__demo-button {
+  max-width: 65px;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px dotted $special-grey;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 1px solid $special-grey;
+  }
+
+  &:active {
+    border-bottom: none;
+  }
+}
+
+.example__demo-runner {
+  margin: 0 17px;
+  flex-grow: 1;
+  min-width: 84px;
+  height: 14px;
+  background-color: #ffffff;
+  border: 1px solid $special-grey;
+  border-radius: 6px;
+  padding: 4px 6px;
+}
+
+.example__demo-runner-progress {
+  height: 100%;
+  background-color: $basic-green;
+  width: 50%;
+  border-radius: 6px;
+  transition: all ease-in 0.2s;
+}
+
+.example__demo-runner-progress--after {
+  transform: translateX(100%);
+}
