@@ -1,0 +1,13 @@
+.button--grey {
+  background-color: $basic-grey;
+  color: $special-dark-grey;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: $special-dark-grey;
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,86 @@
+.catalog {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog__title {
+  margin: 27px 0 0;
+  padding: 0 20px 41px;
+}
+
+.catalog__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog__wrapper {
+  // При больших разрешениях будет выполнять роль центровщика, сейчас паддинги навешаны на карточки
+  padding: 0;
+}
+
+.catalog__additionals {
+  padding-bottom: 39px;
+}
+
+.catalog__additionals-title {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 33px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: calc(100% + 15px);
+    height: 2px;
+    width: 100vw;
+    background-color: $basic-green;
+  }
+}
+
+.catalog__additionals-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #d9d9d9;
+}
+
+.catalog__additionals-item {
+  padding-bottom: 19px;
+}
+
+.catalog__additionals-name {
+  margin-top: 13px;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $special-dark-grey-2;
+}
+
+.catalog__additionals-info {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.catalog__promo {
+  min-height: 289px;
+  position: relative;
+  padding: 58px 55px 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../img/promo-bg.png");
+}
+
+.catalog__promo-text {
+  padding-top: 125px;
+  margin-top: 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
