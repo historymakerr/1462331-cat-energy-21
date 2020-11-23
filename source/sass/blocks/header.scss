@@ -37,6 +37,7 @@
   position: relative;
   transition: all ease-out 0.3s;
   outline: 0;
+  cursor: pointer;
 
   &::before,
   &::after {
