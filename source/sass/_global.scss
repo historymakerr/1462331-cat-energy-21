@@ -41,7 +41,7 @@ a {
   border-bottom: 1px solid #d9d9d9;
 }
 
-.form__title {
+.subtitle {
   font-size: 24px;
   line-height: 26px;
   font-family: "Oswald", sans-serif;
@@ -49,15 +49,13 @@ a {
   color: #000000;
   display: flex;
   padding-left: 19px;
-}
 
-.form__title-text {
-  margin-right: 22px;
-}
-
-.form__title-bar {
-  margin-top: 17px;
-  height: 2px;
-  flex-grow: 1;
-  background-color: $basic-green;
+  &::after {
+    content: "";
+    display: block;
+    margin: 16px 0 0 40px;
+    flex-grow: 1;
+    height: 2px;
+    background-color: $basic-green;
+  }
 }

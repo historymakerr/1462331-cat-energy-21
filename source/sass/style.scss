@@ -6,7 +6,8 @@
 
 
 //Blocks
-@import "blocks/button.scss";
+@import "blocks/button/button.scss";
+@import "blocks/button/_theme/button_theme_grey.scss";
 @import "blocks/header.scss";
 @import "blocks/logo.scss";
 @import "blocks/site-list.scss";
@@ -21,3 +22,7 @@
 
 // FORM
 @import "blocks/program.scss";
+
+// CATALOG
+@import "blocks/catalog.scss";
+@import "blocks/card.scss";
