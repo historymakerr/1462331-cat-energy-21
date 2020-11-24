@@ -1,0 +1,56 @@
+.card {
+  padding: 25px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.card__title {
+  color: $special-dark-grey-2;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.card-more {
+  padding: 0 20px 25px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.card-more__btn {
+  position: relative;
+  width: 100%;
+  padding-top: 79px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 39px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+  }
+
+  &::after {
+    transform: rotate(90deg) translate(0, 15px);
+  }
+}
+
+.card-more__text {
+  text-align: center;
+  margin: 8px 0 21px;
+}
+
+
