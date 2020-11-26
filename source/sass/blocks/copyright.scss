@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 22px 0;
 
   &:hover path {
     fill: $basic-green;
@@ -10,6 +10,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 11px;
   }
 }
 
@@ -20,4 +24,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.copyright__text {
+  @media (min-width: 768px) {
+    display: inline-block;
+    margin-right: 23px;
+  }
 }

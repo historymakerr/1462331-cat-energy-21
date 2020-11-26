@@ -1,16 +1,16 @@
 .button {
-  background-color: $basic-green;
   display: inline-block;
+  width: 100%;
+  padding: 12px 26px;
+  border: 0;
+  cursor: pointer;
+  background-color: $basic-green;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 20px;
   text-transform: uppercase;
   font-weight: 400;
   font-family: "Oswald", sans-serif;
-  padding: 12px 26px;
   color: #ffffff;
-  width: 100%;
-  border: 0;
-  cursor: pointer;
   text-align: center;
 
   &:hover {
@@ -19,5 +19,10 @@
 
   &:active {
     color: rgba(#ffffff, 0.3);
+  }
+
+  @media (min-width: 768px) {
+    width: auto;
+    font-size: 20px;
   }
 }

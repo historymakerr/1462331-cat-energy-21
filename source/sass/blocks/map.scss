@@ -1,12 +1,43 @@
+.map {
+  position: relative;
+}
+
 .map__wrapper {
-  padding: 0 19px;
+  padding: 0 18px;
+
+  @media (min-width: 768px) {
+    padding: 0 71px;
+  }
+
+  @media (min-width: 1440px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 1220px;
+    min-height: 400px;
+    padding: 0;
+    margin: 0 auto;
+  }
 }
 
 .map-invitation {
   background-color: #ffffff;
-  padding: 31px 0 9px;
+  padding: 12px 0 9px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    padding: 46px 0 40px 0;
+  }
+
+  @media (min-width: 1440px) {
+    position: absolute;
+    top: 95px;
+    width: 570px;
+    padding: 46px 89px 40px 76px;
+  }
 }
 
 .map-invitation__title {
@@ -17,14 +48,40 @@
   color: #000000;
   text-transform: uppercase;
   margin-right: 19px;
+
+  @media (min-width: 768px) {
+    max-width: 171px;
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 .map-invitation__address {
   line-height: 20px;
+
+  @media (min-width: 768px) {
+    max-width: 160px;
+    text-align: right;
+    font-size: 16px;
+    line-height: 20px;
+
+    &--city {
+      display: block;
+      margin-top: 21px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    text-align: left;
+  }
 }
 
 .map-frame {
   border: 0;
   height: 362px;
   width: 100%;
+
+  @media (min-width: 768px) {
+    height: 400px;
+  }
 }
