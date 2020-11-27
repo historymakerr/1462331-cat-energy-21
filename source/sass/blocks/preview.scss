@@ -3,22 +3,62 @@
   padding-top: 25px;
   color: #ffffff;
   text-align: center;
-  background-repeat: no-repeat;
-  background-position: center 167px;
-  background-image: url("../img/preview-bg.png");
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 302px;
+    background-color: $basic-green;
+  }
 
   @media (min-width: 768px) {
-    padding: 44px 0 526px 87px;
+    padding: 44px 0 0 0;
     color: #000000;
     text-align: left;
-    background-image: url("../img/preview-bg-tablet.png");
-    background-position: center 245px;
+
+    &::before {
+      display: none;
+    }
   }
 
   @media (min-width: 1440px) {
-    padding: 223px 0 269px 162px;
-    background-image: url("../img/preview-bg-desktop.png");
-    background-position: 558px 141px;
+    padding: 223px 0 53px 0;
+
+    &::before {
+      display: block;
+      left: 50%;
+      height: 100%;
+      width: 50%;
+    }
+  }
+}
+
+.preview__wrapper {
+  position: relative;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.preview__content {
+  @media (min-width: 768px) {
+    position: relative;
+    padding-left: 87px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: 81px;
   }
 }
 
@@ -44,6 +84,15 @@
     padding: 17px 26px;
     font-size: 20px;
     line-height: 20px;
+    position: absolute;
+    z-index: 10;
+    left: 85px;
+    bottom: -54px;
+  }
+
+  @media (min-width: 1440px) {
+    position: static;
+    margin-left: 0;
   }
 }
 
@@ -64,39 +113,29 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 50px;
+  }
 }
 
-.preview__cat-bg {
-  background-color: rgba($basic-green, 0.85);
-  min-height: 302px;
+.preview__picture {
   position: absolute;
-  top: 0;
+  top: 142px;
   left: 0;
   right: 0;
-  z-index: -1;
-  background-image: url("../img/cat-bg.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  height: 270px;
+  background-color: transparent;
 
   @media (min-width: 768px) {
-    display: none;
+    position: static;
+    height: 609px;
+    margin-top: -29px;
   }
 
   @media (min-width: 1440px) {
-    display: block;
-    left: 50%;
-    min-height: 696px;
-    background-image: url("../img/preview-cat-bg-desktop.png");
-    z-index: -10;
-  }
-}
-
-.preview__cat-bg-screen {
-  background-color: rgba($basic-green, 0.85);
-  min-height: 302px;
-
-  @media (min-width: 1440px) {
-    min-height: 696px;
+    margin-top: -81px;
+    height: 499px;
+    margin-left: -52px;
   }
 }

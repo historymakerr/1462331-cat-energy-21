@@ -38,17 +38,22 @@
   </header>
 
   <section class="preview">
-    <div class="preview__cat-bg" style="background-image: 'img/cat-bg.png'">
-      <div class="preview__cat-bg-screen"></div>
-    </div>
-    <div class="container">
-      <h1 class="preview__title title">
-        Функциональное питание для котов
-      </h1>
-      <p class="preview__text">
-        Занялся собой? Займись котом!
-      </p>
-      <a class="button preview__button" href="form.html">подобрать программу</a>
+    <div class="container preview__wrapper">
+      <div class="preview__content">
+        <h1 class="preview__title title">
+          Функциональное питание для котов
+        </h1>
+        <p class="preview__text">
+          Занялся собой? Займись котом!
+        </p>
+        <a class="button preview__button" href="form.html">подобрать программу</a>
+      </div>
+
+      <picture class="preview__picture">
+        <source media="(min-width: 1440px)" srcset="img/preview-bg-desktop.png">
+        <source media="(min-width: 768px)" srcset="img/preview-bg-tablet.png">
+        <img class="preview__img" src="img/preview-bg.png" alt="">
+      </picture>
     </div>
   </section>
 
