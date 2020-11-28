@@ -2,11 +2,30 @@
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 18px;
+
+  @media (min-width: 768px) {
+    padding-top: 20px;
+    padding-bottom: 59px;
+  }
+}
+
+.program__form {
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    padding: 0 39px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 
 .program__title {
   margin-top: 24px;
   margin-bottom: 36px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 55px;
+  }
 }
 
 .program__text {
@@ -14,6 +33,11 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .program__info {
@@ -21,6 +45,11 @@
   padding-bottom: 3px;
   text-transform: uppercase;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: 768px) {
+    padding-top: 46px;
+    border: none;
+  }
 }
 
 .program__info-label {
@@ -30,6 +59,10 @@
 
   &:last-child {
     margin-bottom: 21px;
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 22px;
   }
 }
 
@@ -58,12 +91,22 @@
   &:focus {
     outline: 2px solid $special-dark-grey;
   }
+
+  @media (min-width: 768px) {
+    margin-left: 22px;
+  }
 }
 
 
 .program__goal {
   padding: 29px 0 23px;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    margin: 49px 28px 37px 32px;
+    padding: 33px 0 31px 12px;
+    border: 1px solid #e7e7e7;
+  }
 }
 
 .program__input-radio {
@@ -106,7 +149,25 @@
     left: 8px;
     top: 1px;
     transform: scale(0);
-    transition: all ease-in 0.1s;
+    transition: all ease-in 0.25s;
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 29px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+      top: -9px;
+      left: -15px;
+    }
+
+    &::after {
+      width: 18px;
+      height: 18px;
+      top: 2px;
+      left: -4px;
+    }
   }
 }
 
@@ -116,10 +177,19 @@
 
 .program__contacts {
   padding-top: 2px;
+  padding-bottom: 1px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 30px;
+  }
 }
 
 .program__contacts-title {
   margin-bottom: 36px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 77px;
+  }
 }
 
 .program__input-label {
@@ -130,10 +200,26 @@
   &:not(:last-child) {
     margin-bottom: 15px;
   }
+
+  @media (min-width: 768px) {
+    &:not(:last-child) {
+      margin-bottom: 22px;
+    }
+  }
+}
+
+.program__more {
+  @media (min-width: 768px) {
+    padding-bottom: 41px;
+  }
 }
 
 .program__more-title {
   margin-bottom: 38px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 76px;
+  }
 }
 
 .program__textarea {
@@ -141,11 +227,16 @@
   padding: 9px 12px 13px;
   resize: none;
   border: 1px solid #e7e7e7;
-  min-height: 150px;
+  height: 150px;
 
   &:placeholder-shown {
     text-transform: uppercase;
     font: inherit;
+  }
+
+  @media (min-width: 768px) {
+    padding: 13px 19px 13px;
+    height: 174px;
   }
 }
 
@@ -156,11 +247,23 @@
 .program__additional-title {
   margin-top: 21px;
   margin-bottom: 34px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 58px;
+  }
 }
 
 .program__additional-inner {
   padding-top: 7px;
   margin-bottom: 38px;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 58px;
+    row-gap: 49px;
+    margin-bottom: 61px;
+  }
 }
 
 .program__checkbox {
@@ -203,6 +306,24 @@
     transform: rotate(-50deg) scale(0);
     transition: all ease-out 0.3s;
   }
+
+  @media (min-width: 768px) {
+    padding-left: 60px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+
+    &::after {
+      top: 5px;
+      left: 12px;
+    }
+  }
 }
 
 .program__checkbox-label:hover::before {
@@ -217,6 +338,20 @@
   transform: rotate(0) scale(1);
 }
 
+.program__additional-bottom {
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+  }
+}
+
+.program__button {
+  @media (min-width: 768px) {
+    flex-basis: 282px;
+  }
+}
+
 .program__form-note {
   font-family: "Arial", sans-serif;
   margin-top: 21px;
@@ -224,4 +359,10 @@
   font-size: 14px;
   line-height: 16px;
   color: #000000;
+
+  @media (min-width: 768px) {
+    margin-top: 17px;
+    font-size: 16px;
+    text-align: left;
+  }
 }
