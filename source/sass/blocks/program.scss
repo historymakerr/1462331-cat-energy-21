@@ -6,7 +6,7 @@
 
 .program__title {
   margin-top: 24px;
-  margin-bottom: 39px;
+  margin-bottom: 36px;
 }
 
 .program__text {
@@ -17,13 +17,15 @@
 }
 
 .program__info {
-  padding-top: 20px;
+  padding-top: 26px;
+  padding-bottom: 3px;
   text-transform: uppercase;
   border-bottom: 1px solid #d9d9d9;
 }
 
 .program__info-label {
-  display: block;
+  display: flex;
+  align-items: center;
   margin-bottom: 14px;
 
   &:last-child {
@@ -33,6 +35,8 @@
 
 .program__input {
   padding: 10px 14px;
+  margin-left: 14px;
+  flex-grow: 1;
   font-size: inherit;
   text-transform: uppercase;
   font-family: inherit;
@@ -58,7 +62,7 @@
 
 
 .program__goal {
-  padding: 26px 0;
+  padding: 29px 0 23px;
   text-transform: uppercase;
 }
 
@@ -110,12 +114,17 @@
   transform: scale(1);
 }
 
+.program__contacts {
+  padding-top: 2px;
+}
+
 .program__contacts-title {
-  margin-bottom: 33px;
+  margin-bottom: 36px;
 }
 
 .program__input-label {
-  display: block;
+  display: flex;
+  align-items: center;
   text-transform: uppercase;
 
   &:not(:last-child) {
@@ -124,12 +133,12 @@
 }
 
 .program__more-title {
-  margin-bottom: 35px;
+  margin-bottom: 38px;
 }
 
 .program__textarea {
   width: 100%;
-  padding: 13px 12px;
+  padding: 9px 12px 13px;
   resize: none;
   border: 1px solid #e7e7e7;
   min-height: 150px;
@@ -140,13 +149,18 @@
   }
 }
 
+.program__additional {
+  padding-bottom: 16px;
+}
+
 .program__additional-title {
+  margin-top: 21px;
   margin-bottom: 34px;
 }
 
 .program__additional-inner {
   padding-top: 7px;
-  margin-bottom: 41px;
+  margin-bottom: 38px;
 }
 
 .program__checkbox {

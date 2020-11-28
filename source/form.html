@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header class="header section-border">
+  <header class="header header--static section-border">
     <div class="container">
       <div class="header__inner">
         <a class="logo" href="index.html">
@@ -46,7 +46,7 @@
           Подбор программы
         </h2>
         <p class="program__text">
-          Заполните анкету, и мы подберем программу питания для вашего кота
+          Заполните анкету, и мы подберем <br> программу питания для вашего кота
         </p>
       </div>
       <div class="program__info section-border">
@@ -102,7 +102,8 @@
           Комментарий
         </h3>
         <div class="container">
-          <textarea class="program__textarea" name="habits" id="habits" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="program__textarea" name="habits" id="habits"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
       </div>
       <div class="program__additional">
@@ -128,20 +129,18 @@
               витамины
             </label>
           </div>
+          <button class="button program__button" type="submit">отправить заявку</button>
+          <p class="program__form-note">
+            * — Обязательные поля
+          </p>
         </div>
-      </div>
-      <div class="container">
-        <button class="button program__button" type="submit">отправить заявку</button>
-        <p class="program__form-note">
-          * — Обязательные поля
-        </p>
       </div>
     </form>
   </section>
 
   <section class="map">
     <div class="map__wrapper">
-      <div class="map-invitation">
+      <div class="map-invitation map-invitation--form">
         <h3 class="map-invitation__title">
           приглашаем к&nbsp;сотрудничеству дилеров!
         </h3>
