@@ -53,11 +53,11 @@
         <div class="container">
           <label class="program__info-label" for="name">
             ИМЯ:*
-            <input type="text" class="program__input" id="name" placeholder="Барсик">
+            <input type="text" class="program__input" id="name" placeholder="Барсик" required>
           </label>
           <label class="program__info-label" for="weight">
             Вес (кг):*
-            <input type="number" class="program__input" id="weight" placeholder="7">
+            <input type="number" class="program__input" id="weight" placeholder="7" required>
           </label>
           <label class="program__info-label" for="age">
             Возраст (лет):
@@ -84,16 +84,16 @@
 
       <div class="program__contacts">
         <h3 class="subtitle program__contacts-title">
-          <span>Контактные данные (владельца кота)</span>
+          Контактные данные <br> (владельца кота)
         </h3>
         <div class="container">
           <label class="program__input-label" for="email">
             E-mail:*
-            <input class="program__input" type="email" id="email" placeholder="kuklachev@gmail.com">
+            <input class="program__input" type="email" id="email" placeholder="kuklachev@gmail.com" required>
           </label>
           <label class="program__input-label" for="phone">
             Телефон:*
-            <input class="program__input" type="tel" id="phone" placeholder="8 (960) 900-60-90">
+            <input class="program__input" type="tel" id="phone" placeholder="8 (960) 900-60-90" required>
           </label>
         </div>
       </div>
@@ -131,7 +131,7 @@
         </div>
       </div>
       <div class="container">
-        <button class="button" type="submit">отправить заявку</button>
+        <button class="button program__button" type="submit">отправить заявку</button>
         <p class="program__form-note">
           * — Обязательные поля
         </p>

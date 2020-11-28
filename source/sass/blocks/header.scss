@@ -1,5 +1,14 @@
 .header {
   padding: 6px 0 13px;
+
+  @media (min-width: 1440px) {
+    padding-top: 48px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
 }
 
 .header__inner {
@@ -26,6 +35,13 @@
   &--show {
     transform: translateY(65px);
   }
+
+  @media (min-width: 768px) {
+    position: static;
+    display: flex;
+    transform: translate(0);
+    justify-content: space-between;
+  }
 }
 
 .header__menu-open {
@@ -37,6 +53,7 @@
   position: relative;
   transition: all ease-out 0.3s;
   outline: 0;
+  cursor: pointer;
 
   &::before,
   &::after {
@@ -66,5 +83,9 @@
 
   &--active::after {
     transform: translate(0, -7px) rotate(90deg);
+  }
+
+  @media (min-width: 768px) {
+    display: none;
   }
 }

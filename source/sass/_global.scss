@@ -16,6 +16,11 @@ body {
   background-color: $body-bg;
   color: $special-dark-grey;
   margin: 0;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 a {
@@ -24,9 +29,18 @@ a {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 490px;
   margin: 0 auto;
   padding: 0 20px;
+
+  @media (min-width: 768px) {
+    max-width: 1050px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 1280px;
+  }
 }
 
 .title {
@@ -35,6 +49,11 @@ a {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   color: #000000;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .section-border {
@@ -43,29 +62,18 @@ a {
 
 .subtitle {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 19px;
+  padding-left: 19px;
   color: #000000;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
-  font-family: "Oswald", sans-serif;
-  span {
-    display: inline-block;
-    position: relative;
-    z-index: 10;
-    background-color: #fff;
-      &::after {
-        content: "";
-        position: absolute;
-        width: 100vw;
-        top: 50%;
-        left: 0;
-        height: 2px;
-        flex-grow: 1;
-        background-color: $basic-green;
-        z-index: -1;
-    }
+
+  &::after {
+    content: "";
+    display: block;
+    margin: 16px 0 0 40px;
+    flex-grow: 1;
+    height: 2px;
+    background-color: $basic-green;
   }
 }

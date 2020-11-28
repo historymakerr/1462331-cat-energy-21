@@ -36,10 +36,23 @@
   font-size: inherit;
   text-transform: uppercase;
   font-family: inherit;
-  border: 1px solid #e7e7e7;
+  border: 0;
+  outline: 1px solid #e7e7e7;
 
   &::placeholder {
     color: $special-dark-grey;
+  }
+
+  &:invalid {
+    outline: 2px solid #ff8282;
+  }
+
+  &:hover {
+    outline: 2px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid $special-dark-grey;
   }
 }
 
@@ -51,6 +64,10 @@
 
 .program__input-radio {
   display: none;
+}
+
+.program__input-radio:disabled + .program__goal-label {
+  opacity: 0.3;
 }
 
 .program__goal-label {
@@ -174,10 +191,17 @@
   }
 }
 
+.program__checkbox-label:hover::before {
+  border-color: #bababa;
+}
+
+.program__checkbox:disabled + .program__checkbox-label {
+  opacity: 0.3;
+}
+
 .program__checkbox:checked + .program__checkbox-label::after {
   transform: rotate(0) scale(1);
 }
-
 
 .program__form-note {
   font-family: "Arial", sans-serif;
