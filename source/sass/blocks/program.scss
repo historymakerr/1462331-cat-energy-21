@@ -15,8 +15,6 @@
 }
 
 .program__form {
-  overflow: hidden;
-
   @media (min-width: 768px) {
     padding: 0 39px;
     font-size: 20px;
@@ -59,12 +57,11 @@
 
 .program__info-wrapper {
   max-width: 490px;
-  padding: 0 20px;
   margin: 0 auto;
 
   @media (min-width: 768px) {
     padding: 0 30px;
-    max-width: 990px;
+    max-width: 1050px;
   }
 
   @media (min-width: 1440px) {
@@ -75,18 +72,23 @@
 }
 
 .program__info {
-  padding-top: 26px;
-  padding-bottom: 3px;
+  padding: 26px 20px 4px;
   text-transform: uppercase;
-  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: 768px) {
-    padding-top: 46px;
-    border: none;
+    padding: 46px 0 4px;
   }
 
   @media (min-width: 1440px) {
     padding-top: 0;
+  }
+}
+
+.program-border {
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: 768px) {
+    border: none;
   }
 }
 
@@ -138,10 +140,9 @@
 .program__goal-wrapper {
   max-width: 490px;
   margin: 0 auto;
-  padding: 0 20px;
 
   @media (min-width: 768px) {
-    max-width: 990px;
+    max-width: 1050px;
     padding: 0 30px;
   }
 
@@ -153,12 +154,12 @@
 }
 
 .program__goal {
-  padding: 29px 0 23px;
+  padding: 29px 20px 23px;
   text-transform: uppercase;
 
   @media (min-width: 768px) {
-    margin: 49px 28px 37px 32px;
-    padding: 33px 0 31px 12px;
+    margin: 49px 0 37px 0;
+    padding: 33px 0 31px 44px;
     border: 1px solid #e7e7e7;
   }
 

@@ -50,36 +50,40 @@
         </p>
       </div>
       <div class="program__info-goal-box">
-        <div class="program__info-wrapper">
-          <div class="program__info section-border">
-            <label class="program__info-label" for="name">
-              ИМЯ:*
-              <input type="text" class="program__input" id="name" placeholder="Барсик" required>
-            </label>
-            <label class="program__info-label" for="weight">
-              Вес (кг):*
-              <input type="number" class="program__input" id="weight" placeholder="7" required>
-            </label>
-            <label class="program__info-label" for="age">
-              Возраст (лет):
-              <input type="number" class="program__input" id="age" placeholder="7" min="0" max="30" step="1">
-            </label>
+        <div class="program-border">
+          <div class="program__info-wrapper">
+            <div class="program__info">
+              <label class="program__info-label" for="name">
+                ИМЯ:*
+                <input type="text" class="program__input" id="name" placeholder="Барсик" required>
+              </label>
+              <label class="program__info-label" for="weight">
+                Вес (кг):*
+                <input type="number" class="program__input" id="weight" placeholder="7" required>
+              </label>
+              <label class="program__info-label" for="age">
+                Возраст (лет):
+                <input type="number" class="program__input" id="age" placeholder="7" min="0" max="30" step="1">
+              </label>
+            </div>
           </div>
         </div>
-        <div class="program__goal section-border">
+        <div class="program-border">
           <div class="program__goal-wrapper">
-            <input class="program__input-radio" type="radio" id="lose" name="goal" checked>
-            <label class="program__goal-label" for="lose">
-              похудение
-            </label>
-            <input class="program__input-radio" type="radio" id="gain" name="goal">
-            <label class="program__goal-label" for="gain">
-              Набор массы
-            </label>
-            <input class="program__input-radio" type="radio" id="unknown" name="goal">
-            <label class="program__goal-label" for="unknown">
-              Не знаю (Нужен ваш совет)
-            </label>
+            <div class="program__goal">
+              <input class="program__input-radio" type="radio" id="lose" name="goal" checked>
+              <label class="program__goal-label" for="lose">
+                похудение
+              </label>
+              <input class="program__input-radio" type="radio" id="gain" name="goal">
+              <label class="program__goal-label" for="gain">
+                Набор массы
+              </label>
+              <input class="program__input-radio" type="radio" id="unknown" name="goal">
+              <label class="program__goal-label" for="unknown">
+                Не знаю (Нужен ваш совет)
+              </label>
+            </div>
           </div>
         </div>
       </div>
@@ -144,9 +148,9 @@
     </form>
   </section>
 
-  <section class="map map--form">
+  <section class="map map--grey">
     <div class="map__wrapper">
-      <div class="map-invitation map-invitation--form">
+      <div class="map-invitation map-invitation--grey">
         <h3 class="map-invitation__title">
           приглашаем к&nbsp;сотрудничеству дилеров!
         </h3>

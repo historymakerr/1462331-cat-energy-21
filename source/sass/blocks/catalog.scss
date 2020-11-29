@@ -5,8 +5,8 @@
 }
 
 .catalog__title {
-  margin: 27px 0 0;
-  padding: 0 20px 41px;
+  margin: 24px 0 0;
+  padding-bottom: 38px;
 }
 
 .catalog__list {
@@ -21,23 +21,12 @@
 }
 
 .catalog__additionals {
+  padding-top: 3px;
   padding-bottom: 39px;
 }
 
 .catalog__additionals-title {
-  display: inline-block;
-  position: relative;
   margin-bottom: 33px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: calc(100% + 15px);
-    height: 2px;
-    width: 100vw;
-    background-color: $basic-green;
-  }
 }
 
 .catalog__additionals-list {
@@ -48,11 +37,12 @@
 }
 
 .catalog__additionals-item {
-  padding-bottom: 19px;
+  padding-bottom: 14px;
 }
 
 .catalog__additionals-name {
   margin-top: 13px;
+  margin-bottom: 14px;
   font-size: 16px;
   line-height: 16px;
   font-family: "Oswald", sans-serif;
@@ -62,14 +52,18 @@
 }
 
 .catalog__additionals-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
   font-size: 14px;
   line-height: 14px;
 }
 
 .catalog__promo {
+  padding: 63px 55px 0;
+  margin-bottom: 35px;
   min-height: 289px;
   position: relative;
-  padding: 58px 55px 0;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
