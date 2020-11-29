@@ -1,5 +1,9 @@
 .map {
   position: relative;
+
+  &--form {
+    background-color: #f2f2f2;
+  }
 }
 
 .map__wrapper {
@@ -22,11 +26,16 @@
 }
 
 .map-invitation {
-  background-color: #ffffff;
   padding: 12px 0 9px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #ffffff;
+
+  &--form {
+    padding: 18px 0 3px;
+    background-color: #f2f2f2;
+  }
 
   @media (min-width: 768px) {
     padding: 46px 0 40px 0;
@@ -37,6 +46,7 @@
     top: 95px;
     width: 570px;
     padding: 46px 89px 40px 76px;
+    background-color: #ffffff;
   }
 }
 

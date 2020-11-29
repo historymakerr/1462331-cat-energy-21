@@ -9,6 +9,10 @@
     right: 0;
     z-index: 10;
   }
+
+  &--static {
+    position: static;
+  }
 }
 
 .header__inner {
