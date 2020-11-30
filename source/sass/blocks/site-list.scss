@@ -60,5 +60,13 @@
     &--active {
       border-bottom: 2px solid #ffffff;
     }
+
+    &--dark {
+      color: #111111;
+    }
+
+    &--dark.site-list__link--active {
+      border-bottom: 2px solid $basic-green;
+    }
   }
 }
