@@ -2,14 +2,16 @@
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
+  margin-bottom: 35px;
 
   @media (min-width: 768px) {
     padding-top: 20px;
+    margin-bottom: 41px;
   }
 
   @media (min-width: 1440px) {
     padding-top: 30px;
-    padding-bottom: 9px;
+    margin-bottom: 17px;
   }
 }
 
@@ -60,7 +62,6 @@
 
 .catalog__additionals {
   padding-top: 3px;
-  padding-bottom: 35px;
 
   @media (min-width: 768px) {
     padding-top: 31px;
@@ -68,8 +69,6 @@
 
   @media (min-width: 1440px) {
     padding-top: 41px;
-    padding-bottom: 0;
-    margin-bottom: 0;
   }
 }
 
@@ -78,7 +77,6 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 8px;
   }
 }
 
@@ -218,7 +216,6 @@
     display: flex;
     justify-content: space-between;
     padding: 58px 125px 0 79px;
-    margin-bottom: 41px;
   }
 
   @media (min-width: 1440px) {
