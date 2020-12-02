@@ -1,5 +1,9 @@
+.site-list {
+  width: 100%;
+}
+
 .site-list__item {
-  width: 100vw;
+  width: 100%;
   text-align: center;
 
   @media (min-width: 768px) {
@@ -19,34 +23,47 @@
 }
 
 .site-list__link {
-  font-family: "Oswald", sans-serif;
   width: 100%;
+  display: inline-block;
+  position: relative;
+  padding: 14px 0 10px;
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  padding: 14px 0 10px;
   text-transform: uppercase;
-  display: inline-block;
   background-color: #ffffff;
-  border-top: 1px solid #e6e6e6;
   color: #000000;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1000px;
+    background-color: #e6e6e6;
+    height: 1px;
+    width: 10000px;
+  }
+
   &:hover {
-    color: rgba(#000000, 0.6);
+    opacity: 0.6;
   }
 
   &:active {
-    color: rgba(#000000, 0.3);
-  }
-
-  &--active {
-    border-bottom: 2px solid $basic-green;
+    opacity: 0.3;
   }
 
   @media (min-width: 768px) {
     background-color: transparent;
-    border: 0;
     font-size: 18px;
+
+    &::before {
+      display: none;
+    }
+
+    &--active {
+      border-bottom: 2px solid $basic-green;
+    }
   }
 
   @media (min-width: 1440px) {

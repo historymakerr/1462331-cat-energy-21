@@ -216,7 +216,7 @@
   }
 
   @media (min-width: 1440px) {
-    margin-top: -268px;
+    margin-top: -258px;
   }
 }
 
@@ -228,7 +228,7 @@
   text-align: center;
 
   @media (min-width: 768px) {
-    margin-bottom: 8px;
+    margin-bottom: 0;
   }
 }
 
@@ -239,6 +239,8 @@
 
   @media (min-width: 1440px) {
     width: 690px;
+    height: 656px;
+    padding-top: 15px;
   }
 }
 
@@ -254,7 +256,7 @@
   }
 
   @media (min-width: 1440px) {
-    margin-top: -61px;
+    margin-top: -98px;
     padding-left: 82px;
     padding-right: 0;
   }
@@ -263,6 +265,7 @@
 .example__demo-button {
   max-width: 65px;
   background-color: transparent;
+  box-sizing: content-box;
   border: 0;
   border-bottom: 1px dotted $special-grey;
   text-transform: uppercase;
@@ -278,6 +281,7 @@
 
   &:active {
     border-bottom: none;
+    padding-bottom: 2px;
   }
 
   @media (min-width: 768px) {
@@ -332,10 +336,15 @@
   border-radius: 50%;
   border: 13px solid #ffffff;
   background-color: $basic-green;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
   cursor: pointer;
 
   @media (min-width: 768px) {
     display: block;
+
+    &:active {
+      box-shadow: 0 0 0 1px #68b738;
+    }
   }
 }
 
