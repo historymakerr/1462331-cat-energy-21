@@ -16,7 +16,6 @@ body {
   background-color: $body-bg;
   color: $special-dark-grey;
   margin: 0;
-  overflow-x: hidden;
 
   @media (min-width: 768px) {
     font-size: 16px;

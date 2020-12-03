@@ -18,6 +18,14 @@
 .header__inner {
   display: flex;
   justify-content: space-between;
+
+  &--no-js {
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
 }
 
 .header__menu {
@@ -46,6 +54,11 @@
     transform: translate(0);
     justify-content: space-between;
   }
+}
+
+.header__menu--no-js .header__menu-list {
+  position: static;
+  transform: translate(0, 0);
 }
 
 .header__menu-open {
@@ -92,4 +105,8 @@
   @media (min-width: 768px) {
     display: none;
   }
+}
+
+.header__menu--no-js .header__menu-open {
+  display: none;
 }
