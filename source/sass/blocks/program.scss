@@ -116,12 +116,12 @@
   border: 0;
   outline: 1px solid #e7e7e7;
 
-  &::placeholder {
-    color: $special-dark-grey;
+  &--required {
+    outline: 2px solid #ff8282;
   }
 
-  &:invalid {
-    outline: 2px solid #ff8282;
+  &::placeholder {
+    color: $special-dark-grey;
   }
 
   &:hover {
@@ -320,7 +320,7 @@
 }
 
 .program__additional {
-  padding-bottom: 16px;
+  padding-bottom: 20px;
 
   @media (min-width: 1440px) {
     padding-bottom: 25px;
