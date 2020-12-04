@@ -40,7 +40,6 @@ if (submit) {
 
       input.addEventListener('input', () => {
         if (input.value) {
-          console.log(123);
           input.classList.remove('program__input--required');
         }
       });
