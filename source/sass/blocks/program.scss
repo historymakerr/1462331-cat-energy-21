@@ -142,8 +142,8 @@
     color: $special-dark-grey;
   }
 
-  &:invalid {
-    outline: 2px solid #ff8282;
+  &::placeholder {
+    color: $special-dark-grey;
   }
 
   &:hover {
@@ -342,7 +342,7 @@
 }
 
 .program__additional {
-  padding-bottom: 16px;
+  padding-bottom: 20px;
 
   @media (min-width: 1440px) {
     padding-bottom: 25px;

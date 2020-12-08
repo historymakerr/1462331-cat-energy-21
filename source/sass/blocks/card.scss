@@ -144,10 +144,22 @@
     width: 30px;
     height: 2px;
     background-color: #d3d3d3;
+    transition: all 0.5s linear;
+    transform-origin: center;
   }
 
   &::after {
     transform: rotate(90deg) translate(0, 15px);
+  }
+
+  &:hover::before {
+    transform: translateX(-50%) rotate(360deg);
+    background-color: $basic-green;
+  }
+
+  &:hover::after {
+    transform: rotate(90deg) translate(0, 15px) rotate(360deg);
+    background-color: $basic-green;
   }
 
   br {
