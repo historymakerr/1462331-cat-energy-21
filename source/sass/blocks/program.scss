@@ -126,12 +126,8 @@
   }
 
   &--required + .program__input-label-icon--mail line,
-  &--required + .program__input-label-icon--mail path{
+  &--required + .program__input-label-icon--mail path {
     stroke: #ff8282;
-  }
-
-  &::placeholder {
-    color: $special-dark-grey;
   }
 
   &::placeholder {
@@ -151,7 +147,7 @@
   }
 
   &:focus + .program__input-label-icon--mail line,
-  &:focus + .program__input-label-icon--mail path{
+  &:focus + .program__input-label-icon--mail path {
     stroke: $basic-green;
   }
 
