@@ -50,3 +50,13 @@ if (submit) {
     });
   });
 }
+
+const inputsWIcons = document.querySelectorAll('.program__contacts-inner input');
+console.log(inputsWIcons);
+
+
+inputsWIcons.forEach(input => {
+  input.addEventListener('focus', e => {
+    e.preventDefault();
+  });
+});
