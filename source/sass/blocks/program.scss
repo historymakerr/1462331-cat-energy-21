@@ -107,14 +107,36 @@
 }
 
 .program__input {
-  padding: 10px 14px;
+  position: relative;
   margin-left: 14px;
+  padding: 10px 14px;
   flex-grow: 1;
+  font-family: inherit;
   font-size: inherit;
   text-transform: uppercase;
-  font-family: inherit;
   border: 0;
   outline: 1px solid #e7e7e7;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &--email::after {
+    width: 18px;
+    height: 13px;
+    background-image: url("../img/icons/icon-email.svg");
+  }
+
+  &--phone::after {
+    width: 18px;
+    height: 13px;
+    background-image: url("../img/icons/icon-email.svg");
+  }
 
   &::placeholder {
     color: $special-dark-grey;
