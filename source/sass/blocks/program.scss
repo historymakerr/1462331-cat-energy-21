@@ -107,17 +107,27 @@
 }
 
 .program__input {
-  padding: 10px 14px;
+  position: relative;
   margin-left: 14px;
+  padding: 10px 14px;
   flex-grow: 1;
+  font-family: inherit;
   font-size: inherit;
   text-transform: uppercase;
-  font-family: inherit;
   border: 0;
   outline: 1px solid #e7e7e7;
 
   &--required {
     outline: 2px solid #ff8282;
+  }
+
+  &--required + .program__input-label-icon--phone path {
+    fill: #ff8282;
+  }
+
+  &--required + .program__input-label-icon--mail line,
+  &--required + .program__input-label-icon--mail path {
+    stroke: #ff8282;
   }
 
   &::placeholder {
@@ -130,6 +140,15 @@
 
   &:focus {
     outline: 2px solid $special-dark-grey;
+  }
+
+  &:focus + .program__input-label-icon--phone path {
+    fill: $basic-green;
+  }
+
+  &:focus + .program__input-label-icon--mail line,
+  &:focus + .program__input-label-icon--mail path {
+    stroke: $basic-green;
   }
 
   @media (min-width: 768px) {
@@ -266,9 +285,30 @@
 }
 
 .program__input-label {
+  position: relative;
   display: flex;
   align-items: center;
   text-transform: uppercase;
+
+  &-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 100;
+  }
+
+  &-icon--mail {
+    top: 15px;
+    right: 15px;
+  }
+
+  &-icon--phone {
+    top: 12px;
+    right: 12px;
+  }
 
   &:not(:last-child) {
     margin-bottom: 15px;
