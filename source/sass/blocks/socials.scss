@@ -15,16 +15,27 @@
     margin-right: 35px;
   }
 
-  &--fb:hover path {
+  &--fb svg {
+    stroke: #666666;
+    fill: none;
+  }
+
+  &--fb:hover svg {
     stroke: $basic-green;
+  }
+
+  &--inst svg,
+  &--vk svg {
+    fill: #666666;
+  }
+
+  &--inst:hover svg,
+  &--vk:hover svg {
+    fill: $basic-green;
   }
 
   &:active {
     opacity: 0.3;
-  }
-
-  &:not(&--fb):hover path {
-    fill: $basic-green;
   }
 
   @media (min-width: 768px) {
