@@ -211,11 +211,20 @@
   background-image: url("../img/promo-bg.png");
   text-align: center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-bg@2x.png");
+  }
+
   @media (min-width: 768px) {
     min-height: 200px;
     display: flex;
     justify-content: space-between;
     padding: 58px 125px 0 79px;
+    background-image: url("../img/promo-bg-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-bg-tablet@2x.png");
+    }
   }
 
   @media (min-width: 1440px) {
@@ -223,6 +232,10 @@
     min-height: 289px;
     padding: 57px 42px 0;
     background-image: url("../img/promo-bg-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-bg-desktop@2x.png");
+    }
   }
 }
 
