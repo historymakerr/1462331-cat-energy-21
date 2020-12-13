@@ -4,7 +4,7 @@
   align-items: center;
   padding: 22px 0;
 
-  &:hover path {
+  &:hover svg {
     fill: $basic-green;
   }
 
@@ -24,6 +24,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  svg {
+    width: 27px;
+    height: 34px;
+    fill: #666666;
+  }
 }
 
 .copyright__text {
