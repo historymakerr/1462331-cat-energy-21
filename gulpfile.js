@@ -34,7 +34,7 @@ const styles = () => {
 
 exports.styles = styles;
 
-//HTML Minify
+//HTMLMinify
 
 const html = () => {
   return (gulp.src("source/*.html"))
