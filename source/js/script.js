@@ -52,3 +52,11 @@ if (submit) {
     });
   });
 }
+
+const showAllCatalog = document.querySelector('.card-all__btn');
+
+if (showAllCatalog) {
+  showAllCatalog.addEventListener('click', e => {
+    e.preventDefault();
+  });
+}
