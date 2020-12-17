@@ -62,19 +62,19 @@
   }
 
   &--minerals::before {
-    background-image: url("../img/icons/leave-mobile.svg");
+    background-image: url("../img/leave-mobile.svg");
   }
 
   &--powder::before {
-    background-image: url("../img/icons/powder-mobile.svg");
+    background-image: url("../img/powder-mobile.svg");
   }
 
   &--replace::before {
-    background-image: url("../img/icons/tableware-mobile.svg");
+    background-image: url("../img/tableware-mobile.svg");
   }
 
   &--changes::before {
-    background-image: url("../img/icons/clock-mobile.svg");
+    background-image: url("../img/clock-mobile.svg");
   }
 
   @media (min-width: 768px) {
@@ -102,7 +102,7 @@
       position: absolute;
       top: 0;
       right: 0;
-      font-family: "Oswald", sans-serif;
+      font-family: "Oswald", "Verdana", sans-serif;
       font-size: 280px;
       line-height: 280px;
       color: #f2f2f2;
@@ -110,19 +110,19 @@
     }
 
     &--minerals::before {
-      background-image: url("../img/icons/leave.svg");
+      background-image: url("../img/leave.svg");
     }
 
     &--powder::before {
-      background-image: url("../img/icons/powder.svg");
+      background-image: url("../img/powder.svg");
     }
 
     &--replace::before {
-      background-image: url("../img/icons/tableware.svg");
+      background-image: url("../img/tableware.svg");
     }
 
     &--changes::before {
-      background-image: url("../img/icons/clock.svg");
+      background-image: url("../img/clock.svg");
     }
   }
 

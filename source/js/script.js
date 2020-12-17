@@ -1,7 +1,9 @@
 const headerMenu = document.querySelector('.header__menu'),
   headerInner = document.querySelector('.header__inner');
 
-headerMenu.classList.remove('header__menu--no-js');headerInner.classList.remove('header__inner--no-js');
+headerMenu.classList.remove('header__menu--no-js');
+headerInner.classList.remove('header__inner--no-js');
+
 
 const menuButton = document.querySelector('.header__menu-open'),
   menuList = document.querySelector('.header__menu-list');

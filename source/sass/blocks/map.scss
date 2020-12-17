@@ -50,7 +50,7 @@
 }
 
 .map-invitation__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Verdana", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -89,8 +89,28 @@
   border: 0;
   height: 362px;
   width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/location-mobile.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/location-mobile@2x.png");
+  }
 
   @media (min-width: 768px) {
     height: 400px;
+    background-image: url("../img/location-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/location-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: 1440px) {
+    background-image: url("../img/location-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/location-desktop@2x.png");
+    }
   }
 }

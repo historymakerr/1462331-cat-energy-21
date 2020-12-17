@@ -12,11 +12,11 @@
   <header class="header">
     <div class="container">
       <div class="header__inner header__inner--no-js">
-        <a class="logo" href>
+        <a class="logo">
           <picture class="logo__picture">
             <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="logo__img" src="img/cat-logo.svg" alt="Логотип Cat Energy">
+            <img class="logo__img" src="img/cat-logo.svg" width="191" height="38" alt="Логотип Cat Energy">
           </picture>
         </a>
         <nav class="header__menu header__menu--no-js">
@@ -50,9 +50,11 @@
       </div>
 
       <picture class="preview__picture">
-        <source type="image/webp" media="(min-width: 1440px)" srcset="img/preview-bg-desktop.webp 1x, img/preview-bg-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/preview-bg-tablet.webp 1x, img/preview-bg-tablet@2x.webp 2x">
-        <source type="image/webp" class="preview__img" src="img/preview-bg.webp" srcset="img/preview-bg@2x.webp 2x" alt="">
+        <source type="image/webp" media="(min-width: 1440px)"
+          srcset="img/preview-bg-desktop.webp 1x, img/preview-bg-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="img/preview-bg-tablet.webp 1x, img/preview-bg-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/preview-bg.webp 1x, img/preview-bg@2x.webp 2x">
         <source media="(min-width: 1440px)" srcset="img/preview-bg-desktop.png 1x, img/preview-bg-desktop@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/preview-bg-tablet.png 1x, img/preview-bg-tablet@2x.png 2x">
         <img class="preview__img" src="img/preview-bg.png" srcset="img/preview-bg@2x.png 2x" alt="">
@@ -127,16 +129,14 @@
               тренировок! При этом он не менял своих привычек и по&#8209;прежнему спит по 16 часов в день.
             </p>
             <ul class="example__list">
-              <div class="example__list-stats">
-                <li class="example__item example__item--framed">
-                  5 КГ
-                  <span class="example__item-text">снижение веса</span>
-                </li>
-                <li class="example__item example__item--framed">
-                  60 ДНЕЙ
-                  <span class="example__item-text">затрачено времени</span>
-                </li>
-              </div>
+              <li class="example__item example__item--framed">
+                5 КГ
+                <span class="example__item-text">снижение веса</span>
+              </li>
+              <li class="example__item example__item--framed">
+                60 ДНЕЙ
+                <span class="example__item-text">затрачено времени</span>
+              </li>
               <li class="example__item example__item-price">
                 Затраты на питание:
                 <span class="example__item-cost">15&nbsp;000&nbsp;РУБ.</span>
@@ -146,10 +146,11 @@
         </div>
         <div class="example__demo">
           <picture class="example__demo-picture">
-            <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-after-desktop.webp 1x, img/before-after-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/before-after-tablet.webp 1x, img/before-after-tablet@2x.webp 2x">
-            <source type="image/webp" class="example__demo-img" src="img/example-cat.webp" srcset="img/example-cat@2x.webp 2x" height="232"
-              alt="Пример кота до использования корма">
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/before-after-desktop.webp 1x, img/before-after-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/before-after-tablet.webp 1x, img/before-after-tablet@2x.webp 2x">
+            <source type="image/webp" class="example__demo-img" srcset="img/example-cat.webp 1x, img/example-cat@2x.webp 2x">
             <source media="(min-width: 1440px)"
               srcset="img/before-after-desktop.png 1x, img/before-after-desktop@2x.png 2x">
             <source media="(min-width: 768px)"
@@ -192,27 +193,27 @@
     <div class="container">
       <div class="footer__inner">
         <a class="logo footer__logo" href="">
-          <img class="logo__name" src="img/footer-logo.svg" alt="">
+          <img class="logo__name" src="img/footer-logo.svg" width="128" height="24" alt="">
         </a>
         <ul class="socials footer__socials">
           <li class="socials__item socials__item--vk">
             <a class="socials__link" href="#" aria-label="Vkontakte">
-              <svg>
-                <use xlink:href="img/icons/sprite.svg#vkontakte"></use>
+              <svg width="23" height="16">
+                <use xlink:href="img/sprite.svg#vkontakte"></use>
               </svg>
             </a>
           </li>
           <li class="socials__item socials__item--inst">
             <a class="socials__link" href="#" aria-label="Instagram">
-              <svg>
-                <use xlink:href="img/icons/sprite.svg#instagram"></use>
+              <svg width="16" height="16">
+                <use xlink:href="img/sprite.svg#instagram"></use>
               </svg>
             </a>
           </li>
           <li class="socials__item socials__item--fb">
             <a class="socials__link" href="#" aria-label="Facebook">
-              <svg>
-                <use xlink:href="img/icons/sprite.svg#facebook"></use>
+              <svg width="22" height="22">
+                <use xlink:href="img/sprite.svg#facebook"></use>
               </svg>
             </a>
           </li>
@@ -220,8 +221,8 @@
         <div class="copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__text">HTML Academy</span>
-            <svg>
-              <use xlink:href="img/icons/sprite.svg#htmlacademy"></use>
+            <svg width="27" height="34">
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
         </div>
@@ -234,7 +235,7 @@
   <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p> -->
 
 
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

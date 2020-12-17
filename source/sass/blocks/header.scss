@@ -1,6 +1,10 @@
 .header {
   padding: 6px 0 13px;
 
+  @media (min-width: 768px) {
+    padding-top: 22px;
+  }
+
   @media (min-width: 1440px) {
     padding-top: 48px;
     position: absolute;
