@@ -344,10 +344,11 @@
 
 .program__textarea {
   width: 100%;
+  height: 150px;
   padding: 9px 12px 13px;
+  font: inherit;
   resize: none;
   border: 1px solid #e7e7e7;
-  height: 150px;
 
   &:placeholder-shown {
     text-transform: uppercase;
